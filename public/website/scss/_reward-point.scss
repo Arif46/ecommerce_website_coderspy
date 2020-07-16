@@ -1,0 +1,63 @@
+.reward-point-area{
+    .reward-tittle{
+        position: relative;
+        padding:50px 0;
+        &::before{
+            border-bottom: 1px solid #000;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            content: '';
+            width: 100%;
+        }
+        span{
+            border: 1px solid #000;
+            display: inline-block;
+            color: #000;
+            text-transform: uppercase;
+            line-height: 36px;
+            position: relative;
+            z-index: 1;
+            background: #fff;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 0;
+            font-weight: 700; 
+        }
+    }
+    .reward-caption{
+        p{
+            font-size: 16px;
+            color: #595a5c;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 14px;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        img{
+            margin-bottom: 18px;
+        }
+        a{
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #231f20;
+            display: block;
+            margin-bottom: 11px;
+            &:hover{
+                color: green;
+                display: block;
+            }
+        }
+        span{
+            color: #231f20;
+        }
+    }
+}
+.mt_40{
+    margin-top:40px;
+}

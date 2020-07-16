@@ -1,0 +1,14 @@
+.contact_form_area{
+    /*= input focus effects css
+    =========================== */
+    :focus{outline: none;}
+
+    .bordered_1{position: relative;} /* necessary to give position: relative to parent. */
+    input[type="text"]{ width: 100%; box-sizing: border-box;}
+
+    .effect-1, 
+    .effect-2, 
+    .effect-3{border: 0; border-bottom: 1px solid #ccc;}
+    .effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background-color: #ff4357; transition: 0.5s;}
+    .effect-1:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+}

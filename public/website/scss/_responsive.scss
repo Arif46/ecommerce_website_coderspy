@@ -1,0 +1,21 @@
+/*--------------- ---- Responsive --------------------------*/
+
+    $laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+    $lg :'only screen and (min-width: 992px) and (max-width: 1199px)';
+    $md:'only screen and (min-width: 768px) and (max-width: 991px)';
+    $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+    $xs:'(max-width: 575px)';
+
+
+
+/* big desktop :1500px. */
+    $ex_device:'(min-width: 1501px) and (max-width: 1700px)';
+    $large_device:'(min-width: 1200px) and (max-width: 1500px)';
+    $mid_device:'(min-width: 992px) and (max-width: 1199.99px)';
+    $tablet_device:'(min-width: 768px) and (max-width: 991px)';
+    $mobile_device:'(max-width: 767px)';
+    $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
+
+    $big1: '(min-width: 1200px) and (max-width: 1850px)';
+
+

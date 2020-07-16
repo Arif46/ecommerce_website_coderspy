@@ -1,0 +1,243 @@
+.accounts_wrap{
+    position: relative;
+    &:hover{
+        .account_list_wrap{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(10px);
+        }
+    }
+    .account_list_wrap{
+        position: absolute;
+        width: 500px;
+        background: #fff;
+        transform: translateY(40px);
+        padding: 20px;
+        left: auto;
+        z-index: 9;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        right: -20px;
+        @media #{$sm}{
+            left: -70px;  
+            width: 400px;  
+        }
+        @media #{$xs}{
+            left: -100px;
+            width: 305px;
+        }
+        &::before{
+            border-style: solid;
+            border-bottom-style: solid;
+            border-bottom-style: solid;
+            border-style: dashed;
+            border-width: 9px;
+            border-top-width: 9px;
+            border-bottom-width: 9px;
+            border-top-width: 9px;
+            border-bottom-width: 9px;
+            border-color: transparent;
+            border-bottom-color: transparent;
+            border-bottom-color: transparent;
+            border-top-width: 0;
+            border-bottom: 9px solid #fff;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            position: absolute;
+            top: 0;
+            left: -9px;
+            content: "";
+            right: 24px;
+            top: -9px;
+            left: auto;
+            @media #{$sm}{
+                right: auto;
+                left: 120px;
+            }
+            @media #{$xs}{
+                right: auto;
+                left: 120px;
+            }
+        }
+        .list_header{
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            p{
+                color: #000;
+                a{
+                    color: #000;
+                    &:hover{
+                        color: $btn_bg_1;
+                    }
+                }
+            }
+        }
+        .list_contet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .single_list{
+                padding: 0 0 0 20px ;
+                &:first-child{
+                    border-right: 1px solid #eee;
+                }
+                h4{
+                    font-size: 18px;
+                    margin: 0;
+                    font-weight: 600;
+                }
+                li{
+                    a{
+                        font-size: 14px;
+                        color: #000;
+                        padding: 5px 0;
+                        &:hover{
+                            color: $btn_bg_1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+header{
+    .header_area{
+        .header_right{
+            .list_item_currency{
+                position: relative;
+                &:hover{
+                    .language_list_content{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(10px);
+                    }
+                }
+                .language_list_content{
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 20px;
+                    position: absolute;
+                    width: 230px;
+                    top: 100%;
+                    background: #fff;
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+                    z-index: 999;
+                    transition: .3s;
+                    right: -19px;
+                    @media #{$sm}{
+                        left: 0;    
+                    }
+                    @media #{$xs}{
+                        left: 0;    
+                    }
+                    &::before{
+                        border-style: solid;
+                        border-bottom-style: solid;
+                        border-bottom-style: solid;
+                        _border-style: dashed;
+                        border-width: 9px;
+                        border-top-width: 9px;
+                        border-bottom-width: 9px;
+                        border-top-width: 9px;
+                        border-bottom-width: 9px;
+                        border-color: transparent;
+                        border-bottom-color: transparent;
+                        border-bottom-color: transparent;
+                        border-top-width: 0;
+                        border-bottom: 9px solid #fff;
+                        width: 0;
+                        height: 0;
+                        font-size: 0;
+                        line-height: 0;
+                        position: absolute;
+                        top: 0;
+                        left: -9px;
+                        content: "";
+                        right: 24px;
+                        top: -9px;
+                        left: auto;
+                        @media #{$sm}{
+                            right: auto;
+                            left: 31px;
+                        }
+                        @media #{$xs}{
+                            right: auto;
+                            left: 31px;
+                        }
+                     }
+                    p{
+                        font-size: 14px;
+                        color: #000;
+                        a{
+                            color: $btn_bg_1;
+                            padding: 0;
+                            &:hover{
+                                color: $btn_bg_1;
+                                text-decoration: underline;
+                            }
+                        }
+                        span{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #000;
+                        }
+                    }
+                    .lang_lists{
+                        margin-bottom: 15px;
+                        li{
+                            font-size: 14px;
+                            color: #000;
+                            font-weight: 500;
+                            position: relative;
+                            padding-left: 20px;
+                            margin-bottom: 10px;
+                            a{
+                                padding: 0;
+                                display: inline-block;
+                                color: #000;
+                            }
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                border: 1px solid #000;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: inline-block;
+                                border-radius: 50%;
+                                transition: .3s;
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                border: 1px solid #0daf27;
+                                left: 0;
+                                top: 50%;
+                                transform: translateY(-50%) scale(0);
+                                display: inline-block;
+                                border-radius: 50%;
+                                transition: .3s;
+                                background: #0daf27;
+                            }
+                            &.active{
+                                &::after{
+                                    transform: translateY(-50%) scale(1);
+                                }
+                                &::before{
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

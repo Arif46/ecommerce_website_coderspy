@@ -1,0 +1,138 @@
+// ulta-beauty
+.ulta-beauty{
+    .ulta-beauty-wrapper{
+        background-image: url(../img/about/about_menu.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 701px;
+        @media #{$lg}{
+            height: 582px;
+        }
+        @media #{$md}{
+            height: 443px;
+        }
+        @media #{$sm}{
+            height: 329px;
+        }
+        @media #{$xs}{
+            background-size: cover;
+            background-position: right;
+            height: 318px;
+        }
+
+        .one-page-Nav{
+            float: right;
+            text-align: end;
+            padding-top: 160px;
+            padding-right: 47px;
+            @media #{$md}{
+                padding-top: 87px;
+                padding-right: 16px;
+            }
+            @media #{$sm}{
+                padding-top: 61px;
+                padding-right: 9px;
+            }
+            @media #{$xs}{
+                padding-top: 61px;
+                padding-right: 9px;
+            }
+            ul{
+                li{
+                    display: block;
+                    a{
+                        color: $theme-color;
+                        font-weight: 600;
+                        padding: 6px;
+                        display: block;
+                        font-size: 21px;
+                        position: relative;
+                        transition: .4s;
+                        text-decoration: underline;
+                        margin-bottom: 6px;
+                        @media #{$md}{
+                            margin-bottom: 0;
+                            padding-bottom: 1px;
+                            font-size: 19px;
+                        }
+                        @media #{$sm}{
+                            margin-bottom: 0;
+                            padding-bottom: 0px;
+                            font-size: 14px;
+                        }
+                        @media #{$xs}{
+                            margin-bottom: 0;
+                            padding-bottom: 0px;
+                            font-size: 14px;
+                        }
+                        &:hover{
+                            letter-spacing: 1px;
+                            color: rgb(98, 139, 41);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// end beauty
+
+
+// our-missin-area
+.our-missin-area{
+    .single-vision{
+        h3{
+            color: #000;
+            font-weight: 700;
+            font-size: 21px;
+            margin-bottom: 20px; 
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+    }
+    .full-section-img{
+        img{
+            width: 100%;
+        }
+    }
+    .mission2{
+        img{
+            width: 100%;
+        }
+    }
+}
+// end mission
+
+
+// our-story-area
+.our-story-area{
+  .single-story{
+      img{
+        width: 100%;
+        margin-bottom: 30px; 
+      }
+      h3{
+        color: #000;
+        font-weight: 600;
+        font-size: 27px;
+        margin-bottom: 25px; 
+        @media #{$sm}{
+            font-size: 22px;
+        }
+      }
+      p{
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.5;
+      }
+  }  
+}
+//End our-story
+
+.right-google-forms{
+    height: 3800px;
+    width: 100%;
+}

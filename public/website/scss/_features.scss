@@ -1,0 +1,126 @@
+.features_area{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    @media #{$mobile_device} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+   .features_title{
+       h3{
+        font-size: 22px;
+        font-weight: 600;
+        color: #1c1c1c;
+        border-bottom: 1px solid #1c1c1c;
+        padding-bottom: 0px;
+        display: inline-block;
+        margin-bottom: 85px;
+        @media #{$mobile_device} {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+       }
+   } 
+   .brand_active{
+    .single_brand{
+        text-align: center;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        height: 50px;
+        img{
+            width: auto;
+            display: inline-block;
+        }
+    }
+    &.owl-carousel .owl-item img {
+        display: inline-block;
+        width: auto;
+        @media #{$mobile_device} {
+            width: 100px;
+        }
+    }
+   }
+}
+// features_area_2
+.features_area_2{
+    padding-top: 120px;
+    padding-bottom: 140px;
+    position: relative;
+    .shape_icon{
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        @media #{$mobile_device}{
+            display: none;
+        }
+        img{
+            @media #{$tablet_device}{
+                width: 230px;
+            }
+            @media #{$mid_device}{
+                width: 230px;
+            }
+           
+        }
+
+    }
+    @media #{$mobile_device}{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media #{$tablet_device}{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    &::before{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        content: '';
+        top: -310px;
+        z-index: -1;
+        background-image: linear-gradient(to bottom, #ffffff, #fbf5ff);
+    }
+    .single_feature{
+        margin-bottom: 40px;
+        .icon{
+            width: 98px;
+            height: 98px;
+            @extend %gradient_2;
+            text-align: center;
+            line-height: 98px;
+            @include border-radius(25px);
+            font-size: 37px;
+            color: #fff;
+            box-shadow:#505050;
+            @include transition(.3s);
+            margin: auto;
+            i{
+                font-size: 37px;
+                line-height: 98px;
+            }
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 600;
+            color: $heading_1;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        &:hover .icon{
+            box-shadow: 0px 10px 10px rgba(80, 80, 80, .15);
+        }
+    }
+    .col-lg-3:nth-child(2) .single_feature .icon {
+        @extend %gradient_3;
+    }
+    .col-lg-3:nth-child(3) .single_feature .icon{
+        @extend %gradient_4;
+    }
+    .col-lg-3:nth-child(4) .single_feature .icon{
+        @extend %gradient_5;
+    }
+
+}

@@ -1,0 +1,224 @@
+
+
+.btnw {
+	background: $btn_bg_1;
+	text-transform: capitalize;
+	padding: 27px 61px 25px 29px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 0px;
+	line-height: 1;
+
+	-moz-user-select: none;
+	letter-spacing: 1px;
+	line-height: 0;
+	margin-bottom: 0;
+
+	margin: 10px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+	z-index: 1;
+	border: 0;
+	overflow: hidden;
+    margin:0;
+    border-radius: 11px 0 11px;
+	&::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 101%;
+		height: 101%;
+		background:#75a532;
+		z-index: 1;
+		border-radius: 5px;
+		transition: transform 0.5s;
+		transition-timing-function: ease;
+		transform-origin: 0 0;
+		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+		// 
+		transform: scaleX(0);
+		border-radius: 0px;
+    }
+    &::after{
+        position: absolute;
+        content: "\e82d";
+        font-family: "revicons";
+        font-size: 15px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-family: "revicons" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        right: 32px;
+        font-weight: 300;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+
+    }
+}
+.btnw:hover::before {
+	transform: scaleX(1);
+	color: #fff !important;
+    z-index: -1;
+}
+.btnw:hover::after {
+    right: 26px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.boxed_btn{
+    background: $btn_bg_1;
+    padding: 10px;
+    @include border-radius(4px);
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 40px !important;
+    border: 1px solid transparent;
+    @media #{$mobile_device} {
+        padding: 12px 30px;
+    }
+    &:hover{
+        color: $btn_bg_1;
+        border-color: $btn_bg_1;
+        background: transparent ;
+    }
+}
+
+// Lvoe Arrow
+.boxed_btn-arrow{
+    background: $theme-color;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 56px 8px 17px !important;
+    border: 1px solid transparent;
+    position: relative;
+    &:hover{
+        &::before{
+        color:$theme-color;
+        right: 28px;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "\e82d";
+        font-family: "revicons";
+        font-size: 15px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-family: "revicons" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        right: 32px;
+        font-weight: 300;
+        @include transition(.4s);
+    }
+    &:hover{
+        color:$theme-color;
+        border-color: $theme-color;
+        background: transparent ;
+    }
+}
+
+
+.boxed_btn_2{
+    // background: $btn_bg_1;
+    padding: 10px;
+    @include border-radius(4px);
+    display: inline-block;
+    font-size: 16px;
+    color: $btn_bg_1;
+    font-weight: 600;
+    padding: 12px 40px !important;
+    border: 1px solid $btn_bg_1;
+    @media #{$mobile_device} {
+        padding: 9px 20px;
+    }
+    &:hover{
+        color: #fff;
+        background: $btn_bg_1;
+    }
+}
+
+.line_btn {
+	font-size: 16px;
+	color: #fff;
+	padding: 12px 41px;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    @media #{$mobile_device} {
+        padding: 12px 30px;
+    }
+    &:hover{
+        background: #fff;
+        color: #000;
+    }
+}
+.blank_btn {
+	font-size: 16px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+    // padding: 18px 70px;
+    padding: 12px 65px !important;
+    display: inline-block;
+    @include transition(.3s);
+    font-weight: 600;
+    @media #{$mobile_device} {
+        padding: 12px 30px;
+    }
+    &:hover{
+        color: #000;
+        background: #fff;
+    }
+}
+
+.boxed_btn3{
+    background: $btn_bg_2;
+    padding: 10px;
+    @include border-radius(4px);
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 40px !important;
+    @include transition(.3s);
+    border: 1px solid transparent;
+    @media #{$mobile_device} {
+        padding: 12px 30px;
+    }
+    &:hover{
+        color: $btn_bg_2;
+        border-color: $btn_bg_2;
+        background: transparent ;
+
+    }
+}

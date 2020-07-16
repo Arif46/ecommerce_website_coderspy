@@ -1,0 +1,172 @@
+.blog_body{
+
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: $blog_font1;
+        font-weight: 700;
+        color: #292929;
+        letter-spacing: -0.3px;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    a{
+        color: #868e96;
+        &:hover{
+            color: #141414;
+        }
+    }
+    .mt-30{
+        margin-top: 30px;
+    }
+.loadmore{
+    position: relative;
+    visibility: visible;
+    top: 0px;
+    padding: 15px 67px 15px 60px;
+    color: #3c3c3c;
+    background: #f5f5f5;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    border-radius: 900px;
+    transition: 0.2s;
+    &:hover{
+        cursor: pointer;
+        top: 2px;
+        background: #EEEEEE;
+        box-shadow: none;
+        transition: 0.2s;
+    }
+}
+}
+.Blog_header_area{
+    padding: 50px 25px;
+    .main_header{
+        display: flex;
+        align-items: center;
+        .logo{
+            padding-right: 30px;
+            border-right: 1px solid #e5e5e5;
+            margin-right: 30px;
+            img{
+                max-width: 250px;
+            }
+        }
+        .social_links{
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 22px;
+                    a{
+                        font-size: 19px;
+                        color: #B8B8B8;
+                        &:hover{
+                            color: $blog_heading3;
+                        }
+                    }
+                }
+            }
+        }
+        .blog_search_form {
+            display: inline-block;
+            color: #777777;
+            font-family: 'Heebo', 'Arial';
+            font-weight: 500;
+            font-size: 20px;
+            input[type="search"] {
+                width: 25px;
+                background: url(../img/blog/search-icon.svg) no-repeat 0px center;
+                    background-size: auto;
+                background-size: 19px 21px;
+                color: transparent;
+                border: none;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    background: url(../img/blog/search-icon-black.svg) no-repeat 0px center;
+                    width: 25px;
+                    // background: url(./img/search-icon-black.svg) no-repeat 0px center;
+                        background-size: auto;
+                    background-size: 19px 21px;
+                    color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                }
+                &:focus {
+                    padding: 0;
+                    width: 130px;
+                    color: #292929;
+                    font-size: 16px;
+                    font-family: 'Heebo', 'Arial';
+                    font-weight: 400;
+                    background: none !important;
+                    cursor: auto;
+                    border: none;
+                    box-shadow: 0 5px 0 0 #d4d4d4;
+                }
+            }
+        }
+    }
+
+    .header_bottom{
+    margin-top: 50px;
+    margin-bottom: 40px;
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 20px;
+                a{
+                    font-family: $blog_font2;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $blog_heading4;
+                    &:hover{
+                        color: $blog_heading3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog_footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .social_links{
+        margin-bottom: 20px;
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    display: inline-block;
+                    margin-right: 47px;
+                    color: #282828;
+                    font-size: 22px;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: #212529;
+        text-align: center;
+    }
+    .credit {
+        text-align: center;
+        color: #bdbdbd;
+        a{
+            color: #bdbdbd;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+    
+    }
+}

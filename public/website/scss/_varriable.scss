@@ -1,0 +1,78 @@
+// old Font
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Heebo:300,400,500,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Roboto:300,400,500,700&display=swap');
+
+
+// New Add Font
+
+// @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,600,700,700i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Heebo:300,400,500,700,800,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Roboto:300,400,500,700&display=swap');
+
+
+// fonts
+
+// $font1: 'arial_rounded_mt_stdbold';  //bold Font
+ $font1: 'Assistant', sans-serif;
+
+
+// blog variable 
+    $blog_font1: 'Assistant', sans-serif;
+    $blog_font2: 'Heebo', sans-serif;
+    
+    $blog_heading1: #888;
+    $blog_heading2: #272727;
+    $blog_heading3: #141414;
+    $blog_heading4: #838383;
+
+    $blog_para1_color : #909090;
+
+
+
+// theme used color here 
+    $theme-color:#8EC63F;
+    $theme-color1:#99CB4E;;
+    
+    $theme-color2:#BE9E55;
+
+// btn bg 
+$btn_bg_1 : #8EC63F;
+$btn_bg_2 : #4543de;
+
+
+
+$gray-color: #ddd;
+$color_1: #505050;
+$color_2: #458efe;
+$heading_1 : #0b0b21;
+
+
+
+$cl-white :#ffffff;
+$cl-black :#000000;
+$cl-primary :#8EC63F;
+$cl-secondary :#A8A9AD;
+
+
+
+
+
+
+// Responsive
+//Big one
+$big0: 'only screen and (min-width: 1200px) and (max-width:1500px)';
+$big01: 'only screen and (min-width: 1501px) and (max-width:1600px)';
+$big1: 'only screen and (min-width: 1601px) and (max-width:1800px)';
+$big2: 'only screen and (min-width: 1801px) and (max-width:2000px)';
+$big3: 'only screen and (min-width: 2001px) and (max-width:2200px)';
+
+// Common
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg :'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+$xs:'(max-width: 575px)';
+
+

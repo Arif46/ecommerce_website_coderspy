@@ -1,0 +1,44 @@
+<?php
+
+use App\HeaderTop;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateHeaderTopsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('header_tops', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
+            $table->text('details')->nullable();
+            $table->tinyInteger('active_status')->default(1);
+            $table->integer('created_by')->nullable()->default(1)->unsigned();
+            $table->integer('updated_by')->nullable()->default(1)->unsigned();
+            $table->timestamps();
+        });
+
+        $HeaderTop=new HeaderTop();
+        $HeaderTop->name='Header Top';
+        $HeaderTop->title='WE ARE DELIVERING AS USUAL DURING THE LOCKDOWN WITH CONTACTLESS DELIVERY';
+        $HeaderTop->details='<div class="row" style="box-sizing: border-box; display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; color: rgb(33, 37, 41); font-family: &quot;Nunito Sans&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;"><div class="col-md-12 col-sm-12" style="box-sizing: border-box; position: relative; width: 950px; min-height: 1px; padding-right: 15px; padding-left: 15px; -webkit-box-flex: 0; flex: 0 0 100%; max-width: 100%;"><div class="single-about" style="box-sizing: border-box; margin-bottom: 40px;"><h4 style="box-sizing: border-box; font-family: &quot;Nunito Sans&quot;, sans-serif; line-height: 1.2; margin-top: 0px; margin-bottom: 0.5rem; font-weight: 500; color: rgb(28, 28, 28); font-size: 1.5rem;">Summary:</h4><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Below is a brief summary of the salient provisions of the Privacy Policy of using this site, and does not constitute the full Terms & Conditions of use.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Using this site implies that you accept the Terms & Conditions and agree to be bound by them. If you do not agree to these terms, you must not use or access this site.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Use this site only for the purpose intended, and do not infringe on the rights of other persons while using this site. If we become aware of any abuse of the site, we may have to block access to the site, or to a specific user where applicable.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">These Terms & Conditions also refer to other documents such as the Terms & Conditions, Shipping Policy and Returns Policy. You are required to familiarize yourself with these documents as they govern your use of this site.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Where required, you must provide correct and accurate information, and ensure that it is up to date at all times.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">This site is owned and operated by Al Haramain Perfumes in the United Arab Emirates. Shipping of products to other countries may be available, but additional charges may apply.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">This site may not be available from time to time for maintenance or upgrades.</p></div></div></div><div class="row" style="box-sizing: border-box; display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; color: rgb(33, 37, 41); font-family: &quot;Nunito Sans&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;"><div class="col-md-12 col-sm-12" style="box-sizing: border-box; position: relative; width: 950px; min-height: 1px; padding-right: 15px; padding-left: 15px; -webkit-box-flex: 0; flex: 0 0 100%; max-width: 100%;"><div class="single-about" style="box-sizing: border-box; margin-bottom: 40px;"><h3 style="box-sizing: border-box; font-family: &quot;Nunito Sans&quot;, sans-serif; line-height: 1.2; margin-top: 0px; margin-bottom: 20px; font-weight: 500; color: rgb(28, 28, 28); font-size: 1.75rem;">Detailed Terms &amp; Conditions:</h3><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Below is a brief summary of the salient provisions of the Terms & Conditions of using this site, and does not constitute the full Terms & Conditions of use.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Using this site implies that you accept the Terms & Conditions and agree to be bound by them. If you do not agree to these terms, you must not use or access this site.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Use this site only for the purpose intended, and do not infringe on the rights of other persons while using this site. If we become aware of any abuse of the site, we may have to block access to the site, or to a specific user where applicable.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">These Terms & Conditions also refer to other documents such as the Terms & Conditions, Shipping Policy and Returns Policy. You are required to familiarize yourself with these documents as they govern your use of this site.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">Where required, you must provide correct and accurate information, and ensure that it is up to date at all times.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">This site is owned and operated by Al Haramain Perfumes in the United Arab Emirates. Shipping of products to other countries may be available, but additional charges may apply.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 13px; font-size: 0.8125rem; font-weight: 400; line-height: 1.4rem; color: rgb(80, 80, 80); font-family: &quot;Nunito Sans&quot;, sans-serif;">This site may not be available from time to time for maintenance or upgrades.</p></div></div></div>';
+        $HeaderTop->save();
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('header_tops');
+    }
+}

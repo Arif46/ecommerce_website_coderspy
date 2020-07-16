@@ -1,0 +1,97 @@
+.counter_area{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    position: relative;
+    &.plus_padding{
+        padding-bottom: 150px;
+        padding-top: 80px;
+        @media #{$mobile_device} {
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+        @media #{$tablet_device} {
+            padding-top: 0px;
+            padding-bottom: 70px;
+        }
+    }
+    @media #{$mobile_device} {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .counter_icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+        line-height: 96px;
+        background: #ffecee;
+        &:nth-child(2){
+            background: #000;
+        }
+    }
+    .col-xl-4:nth-child(2) .single_counter .counter_icon {
+        background: #e5fdf7;
+    }
+    .col-xl-4:nth-child(3) .single_counter .counter_icon {
+        background: #f4eefe;
+    }
+    .couner_ilstrator_bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 660px;
+        bottom: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .single_counter{
+        padding: 60px 0;
+        text-align: center;
+        border: 1px solid transparent;
+        @include box-shadow(0px 10px 22px 0px rgba(0, 0, 0, 0.05));
+        @include transition(.3s);
+        margin-bottom: 30px;
+        .counter_icon{
+            img{
+
+            }
+        }
+        h3{
+            font-size: 42px;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-top: 26px;
+            margin-bottom: 18px;
+            @media #{$tablet_device} {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            @media #{$mobile_device} {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            span{
+                span{
+
+                }
+            }
+        }
+        span.conter_subtitle{
+            color: #505050;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:hover{
+            border: 1px solid #ff4357;
+        }
+    }
+    .col-xl-4:nth-child(2) .single_counter:hover{
+        border: 1px solid #00ebac !important;
+    }
+    .col-xl-4:nth-child(3) .single_counter:hover{
+        border: 1px solid #9657f6 !important;
+    }
+}
+  

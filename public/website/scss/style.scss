@@ -1,0 +1,65 @@
+
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name:
+	  Author:
+	  Support:
+	  Description:
+	  Version:
+	  
+------------------------------------------------- 
+*/
+
+/* CSS Index
+-------------------------------------------------
+
+	1. Theme default css
+	2. header
+	3. slider
+	4. about-area
+	5. features-box
+	6. department
+	7. team
+	8. video-area
+	9. counter
+	10. footer
+
+-------------------------------------------------
+*/
+
+
+// Default
+    @import 'varriable';
+    @import 'mixins';
+    @import 'responsive';
+    @import 'extend';
+    @import 'reset';
+    @import 'btn';
+
+
+// Homepage
+    @import 'title';
+    @import 'main';
+    @import 'header';
+
+// other page
+    @import 'testimonial';
+    @import 'product-list';
+    @import 'reward-point';
+    @import 'about_page';
+
+// Mobile_menu
+    @import 'mobile_menu';
+    @import 'menu_animation';
+
+
+// mobile_menu #####
+    @import 'about';
+
+
+// _hover #####
+    @import 'hover';
+    @import 'blog_header';
+    @import 'blog_banner';
+    @import 'blog_service';

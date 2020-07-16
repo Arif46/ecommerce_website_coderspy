@@ -1,0 +1,9 @@
+@font-face {font-family: "revicons";
+  /* src: url("0e979bd4a3c1c6ac788ed57ac569667f.eot"); IE9 */
+  src: url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.eot"); /* IE9*/
+  src: url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.woff2") format("woff2"), /* chrome?firefox */
+  url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.woff") format("woff"), /* chrome?firefox */
+  url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.ttf") format("truetype"), /* chrome?firefox?opera?Safari, Android, iOS 4.2+*/
+  url("../fonts/0e979bd4a3c1c6ac788ed57ac569667f.svg#revicons") format("svg"); /* iOS 4.1- */
+}
